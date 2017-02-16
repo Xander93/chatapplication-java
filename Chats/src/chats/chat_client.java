@@ -49,14 +49,14 @@ public class chat_client extends javax.swing.JFrame {
         msg_area.setRows(5);
         jScrollPane1.setViewportView(msg_area);
 
-        msg_text.setText("jTextField1");
+        msg_text.setText("Text...");
         msg_text.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_textActionPerformed(evt);
             }
         });
 
-        msg_send.setText("jButton1");
+        msg_send.setText("Send");
         msg_send.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_sendActionPerformed(evt);
@@ -70,9 +70,9 @@ public class chat_client extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(msg_text, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                        .addComponent(msg_text)
                         .addGap(18, 18, 18)
                         .addComponent(msg_send, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())

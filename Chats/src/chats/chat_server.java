@@ -50,9 +50,14 @@ public class chat_server extends javax.swing.JFrame {
         msg_area.setRows(5);
         jScrollPane1.setViewportView(msg_area);
 
-        msg_text.setText("jTextField1");
+        msg_text.setText("Text...");
+        msg_text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                msg_textActionPerformed(evt);
+            }
+        });
 
-        msg_send.setText("jButton1");
+        msg_send.setText("Send");
         msg_send.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 msg_sendActionPerformed(evt);
@@ -99,6 +104,10 @@ public class chat_server extends javax.swing.JFrame {
             
         }  
     }//GEN-LAST:event_msg_sendActionPerformed
+
+    private void msg_textActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_msg_textActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_msg_textActionPerformed
 
     /**
      * @param args the command line arguments
